@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인 소개</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-image: linear-gradient(to right, #ffecd2, #fcb69f); /* 화려한 배경 그라디언트 */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            animation: bgAnimation 10s ease infinite; /* 배경에 애니메이션 추가 */
+        }
+
+        @keyframes bgAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            color: #ffec99; /* 연노란색 */
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* 글자 그림자 */
+            animation: bounce 1.5s infinite; /* 글자가 튀는 효과 */
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .container {
+            background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(224,247,250,1) 100%);
+            border-radius: 20px;
+            padding: 40px;
+            width: 80%;
+            max-width: 700px;
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3); /* 마우스를 올렸을 때 확대 효과 */
+        }
+
+        h2 {
+            color: #00796b; /* 다크한 하늘색 */
+            font-size: 2rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        ul {
+            list-style-type: none; /* 리스트 모양 없애기 */
+            padding: 0;
+        }
+
+        ul li {
+            background: #ffec99;
+            color: #00796b;
+            font-size: 1.2rem;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        ul li:hover {
+            background-color: #fcb69f;
+            transform: translateX(10px); /* 리스트 항목에 애니메이션 추가 */
+        }
+
+        a {
+            text-decoration: none;
+            color: #d32f2f; /* 링크 색상 */
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #00796b; /* 링크 색상 변화 */
+        }
+
+        img {
+            border: 5px solid #ffec99;
+            border-radius: 50%; /* 이미지 둥글게 */
+            width: 180px;
+            height: 180px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: rotate(360deg); /* 마우스 올렸을 때 회전 애니메이션 */
+        }
+
+        .social {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>안녕하세요!</h1>
+        <p>저는 [이승준]입니다. 이곳은 제 개인 소개 페이지입니다.</p>
+        
+        <h2>소개</h2>
+        <img src="/Who-I-am/KakaoTalk_20241024_001512535.jpg" alt="프로필 사진">
+        <ul>
+            <li>언동중학교 전교회장</li>
+            <li>뛰어난 두뇌</li>
+        </ul>
+
+        <div class="social">
+            <h2>인스타그램</h2>
+            <p>아이디: <a href="https://instagram.com/two_winwin" target="_blank">@two_winwin</a></p>
+        </div>
+    </div>
+</body>
+</html>
